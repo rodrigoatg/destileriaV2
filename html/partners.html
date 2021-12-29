@@ -6,100 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/testiconoweb.bmp"> <!--Esto es el incono del navegador-->
     <title>Sobre Nosotros</title>
 </head>
 <body>
-    <header class="m-1 encabezado" >
-        <div class="d-flex justify-content-end align-items-center c">
-          <h1 class="font-weight-bold encabezado__Titulo">
-            Destilería Bó
+  <div class="container-fluid m-0 p-0">
+    <!--  HEADER - INICIO    -->
+    <header class="encabezado" >
+      <div class="d-flex justify-content-end align-items-center">
+        <h1 class="font-weight-bold encabezado__Titulo">
+          Destilería Bó
         </h1>
-        <img class="encabezado__logo" src="./assets/testicono.jpg" alt="" width="100" height="100">
-        </div>
-        
-        <nav class="navbar navbar-expand-lg navbar-light d-flex flex-row-reverse ">
-          <!--
-          <a class="navbar-brand pull-right" href="#">
-            <img src="./assets/testicono.jpg" alt="" width="100" height="100">
-          </a>
-          -->
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button> 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item navHipervinculo">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Productos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="./productos.html">Gin & Tonic</a></li>
-                      <li><a class="dropdown-item" href="./productos.html">Sidras</a></li>
-                      <!-- <li><hr class="dropdown-divider"></li> -->
-                      <li><a class="dropdown-item" href="./productos.html">Cervezas</a></li>
-                    </ul>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./partners.html">Partners</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./contacto.html">Contacto</a>
-                      </li>
-                  </li>
-                  <!--  
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                  -->
+        <img class="encabezado__logo" src="../assets/testicono.jpg" alt="" width="100" height="100">
+      </div>
+      
+      <nav class="navbar navbar-expand-lg navbar-light d-flex flex-row-reverse">
+        <!--
+        <a class="navbar-brand pull-right" href="#">
+          <img src="./assets/testicono.jpg" alt="" width="100" height="100">
+        </a>
+        -->
+        <div class="container-fluid bgGreen p-2">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid justify-content-end">
+              <li class="nav-item navHipervinculo px-3">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown navHipervinculo px-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                </a>
+                <ul class="dropdown-menu px-3 bgGreen" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item navHipervinculo" href="./productos.html">Gin & Tonic</a></li>
+                  <li><a class="dropdown-item navHipervinculo" href="./productos.html">Sidras</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item navHipervinculo" href="./productos.html">Cervezas</a></li>
                 </ul>
-              </div>
-            </div>
-          </nav>
+                <li class="nav-item navHipervinculo px-3">
+                  <a class="nav-link " href="./about.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item navHipervinculo px-3">
+                  <a class="nav-link" href="./partners.html">Partners</a>
+                </li>
+                <li class="nav-item navHipervinculo px-3">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </li>
+                <!--  
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+                -->
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <h1 class="text-center subtitulos">
-        Partners
-    </h1>
-    <main class="partnerMain">
-        <div class="partnerIni">
-            <h2 class="partnerNombre">
-                <strong>La Chamba Bar</strong> 
-            </h2>
-            <img class="partnerImage" src="../assets/LaChamba3.jpg" alt="LaChambaBeer" width="500px">
-        </div>
-        <br><br>
-        <div class="partnerExtra">
-            <article class="partnerInfo">
-                <p> Acá ponemos una breve reseña </p>
-                <p>🕛 Martes-Miércoles-Jueves-Domingos 18:00-00:00.</p>    
-                <p>🕰 Viernes-Sábados 18:00-01:00</p>
-                <p>📲 Pedidos al 1137781944</p>
-            </article>
-                        
+    <!--  HEADER - FIN    -->
+    <div class=" container-fluid m-3">
+      <div class="row">
+        <h1 class="text-center subtitulos">
+            Partners
+        </h1>
+      </div>
+      <div class="row">
+        <main class="partnerMain">
+            <div class="partnerIni col">
+                <h2 class="partnerNombre p-3">
+                    <strong>La Chamba Bar</strong> 
+                </h2>
+                <img class="partnerImage" src="../assets/LaChamba3.jpg" alt="LaChambaBeer" width="450px">
+            </div>
             <br><br>
-            <!--<h3 class="partnerRedes">Buscalo en las Redes</h3>
-            <br>-->
-            <section class="partnerRedes">
-                <a href="https://www.instagram.com/lachamba.beer/?hl=es">
-                    <img src="../assets/instagram.jpg" alt="Instagram" width="30px">
-            </a>
-            <a href="https://es-la.facebook.com/Lachambabeer-393985917809270/">
-                    <img src="../assets/facebook.png" alt="Facebook" width="30px">
-            </a>
-            </section>
-            <section class="partnerMapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.9697858188806!2d-58.560256184771674!3d-34.55432038047226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3abfd43e59d42470!2sLa%20Chamba!5e0!3m2!1ses!2sar!4v1638391443250!5m2!1ses!2sar" 
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </section>
-        </div>
-        <br><br>
-    </main>
+            <div class="partnerExtra col">
+                <article class="partnerInfo">
+                    <p> Acá ponemos una breve reseña </p>
+                    <p>🕛 Martes-Miércoles-Jueves-Domingos 18:00-00:00.</p>    
+                    <p>🕰 Viernes-Sábados 18:00-01:00</p>
+                    <p>📲 Pedidos al 1137781944</p>
+                </article>
+                            
+                <br><br>
+                <!--<h3 class="partnerRedes">Buscalo en las Redes</h3>
+                <br>-->
+                <section class="partnerRedes">
+                    <a href="https://www.instagram.com/lachamba.beer/?hl=es">
+                        <img src="../assets/instagram.jpg" alt="Instagram" width="30px">
+                </a>
+                <a href="https://es-la.facebook.com/Lachambabeer-393985917809270/">
+                        <img src="../assets/facebook.png" alt="Facebook" width="30px">
+                </a>
+                </section>
+                <section class="partnerMapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.9697858188806!2d-58.560256184771674!3d-34.55432038047226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3abfd43e59d42470!2sLa%20Chamba!5e0!3m2!1ses!2sar!4v1638391443250!5m2!1ses!2sar" 
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </section>
+            </div>
+            <br><br>
+        </main>
+      </div>
+    </div>
+  </div>
     <footer>
         <div class="footer">
             <br>
@@ -120,8 +131,8 @@
             </div>
         </div>
     </footer>
-  
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,56 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/testiconoweb.bmp"> <!--Esto es el incono del navegador-->
     <title>Home</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <header class="m-1 encabezado" >
-            <div class="d-flex justify-content-end align-items-center c">
+  <div class="container-fluid m-0 p-0">
+        <header class="encabezado" >
+            <div class="d-flex justify-content-end align-items-center">
               <h1 class="font-weight-bold encabezado__Titulo">
                 Destilería Bó
             </h1>
             <img class="encabezado__logo" src="./assets/testicono.jpg" alt="" width="100" height="100">
             </div>
             
-            <nav class="navbar navbar-expand-lg navbar-light d-flex flex-row-reverse ">
+            <nav class="navbar navbar-expand-lg navbar-light d-flex flex-row-reverse">
               <!--
               <a class="navbar-brand pull-right" href="#">
                 <img src="./assets/testicono.jpg" alt="" width="100" height="100">
               </a>
               -->
-                <div class="container-fluid">
+                <div class="container-fluid bgGreen p-2">
                   <a class="navbar-brand" href="#"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button> 
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item navHipervinculo">
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid justify-content-end">
+                      <li class="nav-item navHipervinculo px-3">
                         <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                       </li>
-                      <li class="nav-item dropdown">
+                      <li class="nav-item dropdown navHipervinculo px-3">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Productos
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="./html/productos.html">Gin & Tonic</a></li>
-                          <li><a class="dropdown-item" href="./html/productos.html">Sidras</a></li>
+                        <ul class="dropdown-menu px-3 bgGreen" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item navHipervinculo" href="./html/productos.html">Gin & Tonic</a></li>
+                          <li><a class="dropdown-item navHipervinculo" href="./html/productos.html">Sidras</a></li>
                           <!-- <li><hr class="dropdown-divider"></li> -->
-                          <li><a class="dropdown-item" href="./html/productos.html">Cervezas</a></li>
+                          <li><a class="dropdown-item navHipervinculo" href="./html/productos.html">Cervezas</a></li>
                         </ul>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./html/about.html">Sobre Nosotros</a>
+                        <li class="nav-item navHipervinculo px-3">
+                            <a class="nav-link " href="./html/about.html">Sobre Nosotros</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item navHipervinculo px-3">
                         <a class="nav-link" href="./html/partners.html">Partners</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item navHipervinculo px-3">
                           <a class="nav-link" href="./html/contacto.html">Contacto</a>
                           </li>
                       </li>
@@ -65,64 +66,75 @@
               </nav>
         </header>
                                                                   <!-- MAIN INICIO-->
-        <main>
-          <h3 class="idx__titulo text-center mb-4">Productos</h3>
+        <main class="p-3">
           <!--  PRODUCTOS  -->
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Gin & Tonic"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Sidras"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Cervezas"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/Gintonic.jpg" class="d-block w-25 mx-auto" alt="Gin & Tonic">
+          <div class="container-fluid d-flex flex-column justify-content-center">
+            <h3 class="idx__titulo text-center mb-4 subtitulos">
+              Productos
+            </h3>
+            <!--  PRODUCTOS  -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Gin & Tonic"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Sidras"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Cervezas"></button>
               </div>
-              <div class="carousel-item">
-                <img src="./assets/sidra4.webp" class="d-block w-50 mx-auto" alt="Sidras">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/Gintonic.jpg" class="d-block w-25 mx-auto" alt="Gin & Tonic">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/sidra4.webp" class="d-block w-50 mx-auto" alt="Sidras">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/cerveza2.webp" class="d-block w-50 mx-auto" alt="Cervezas">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="./assets/cerveza2.webp" class="d-block w-50 mx-auto" alt="Cervezas">
-              </div>
-            </div>
-            <button class="carousel-control-prev btn-outline-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next btn-outline-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
+              <button class="carousel-control-prev btn-outline-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next btn-outline-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+              <br><br>
           </div>
+          <button class="idx__button efectoBigger">
+            <a class="linkinterno" href="./html/productos.html">Productos</a>
+          </button>
+        </div>
           <!--  NOSOTROS  -->
           <section class="idxabout m-3">
-            <h3 class="idx__titulo">Sobre Nosotros</h3>
-            <p>Somos una destilería familiar ubicada en Buenos Aires con un brazo amigo que nos une a la Provincia de Santa Cruz.</p>
+            <h3 class="idx__titulo subtitulos">Sobre Nosotros</h3>
+            <p class="m-4 p-3">
+                Somos una destilería familiar ubicada en Buenos Aires con un brazo amigo que nos une a la Provincia de Santa Cruz.
+            </p>
             <br>
-            <button class="idx__button">
+            <button class="idx__button efectoBigger">
                 <a class="linkinterno" href="./html/about.html">Conocer más</a>
             </button>
           </section>
 
           <!--  PARTNERS  -->
-          <section class="idxpartners m-3">
-            <h3 class="idx__titulo">Partners</h3>
-            <a href="https://es-la.facebook.com/Lachambabeer-393985917809270/">  
-                <img src="./assets/LaChamba2.png" alt="ChambaBar" width="300px">
+          <section class="idxpartners m-4 p-3">
+            <h3 class="idx__titulo subtitulos p-3">Partners</h3>
+            <a  href="https://es-la.facebook.com/Lachambabeer-393985917809270/">  
+                <img class="efectoBigger" src="./assets/LaChamba2.png" alt="ChambaBar" width="300px">
             </a>
             <br><br>
-            <button class="idx__button">
-                <a class="linkinterno" href="./html/partners.html">Partners</a>
+            <button class="idx__button m-3 efectoBigger">
+                <a class="linkinterno efectoBigger" href="./html/partners.html">Partners</a>
             </button>
           </section>
           
           <!--  CONTACTO  -->
-          <section class="idxcontacto m-3">
-            <h3 class="idx__titulo">Contacto</h3>
+          <section class="idxcontacto m-4 p-3">
+            <h3 class="idx__titulo subtitulos p-3">Contacto</h3>
             <br><br><br>
-            <p>¿Deseas formar parte de nuestros partners? ¡Comunicate con nostros!</p>
+            <p class="p-3">¿Deseas formar parte de nuestros partners? ¡Comunicate con nostros!</p>
             <br><br><br>
-            <button class="idx__button">
+            <button class="idx__button m-3 efectoBigger">
                 <a class="linkinterno" href="./html/Contacto.html">Contactate con Nosotros!</a>
             </button>
           </section>

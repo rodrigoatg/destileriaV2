@@ -1,7 +1,7 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
 }
 
 body{
@@ -15,8 +15,17 @@ body{
 }
 */
 
+.bgGreen{
+    background-color: darkseagreen !important;
+}
+
+.espaciado{
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+}
+
 .subtitulos{
-    color: darkolivegreen;
+    color: rgb(36, 119, 36);
 }
 
 main{
@@ -31,17 +40,18 @@ main{
     align-self: center;
 }
 
-.encabezado{
-    background-image: url("../assets/fondoV2.jpg");
+.abajo{
+    align-self: flex-end !important;
 }
 
-.indice{
-    color: rgb(255, 0, 0);
-    text-decoration: darkmagenta;
+.encabezado{
+    background-image: url("../assets/fondoGrey.jpg");
 }
 
 .encabezado__Titulo{
-    color: darkgreen;
+    color: rgb(36, 119, 36);
+    font-weight: bold !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
 
@@ -52,7 +62,15 @@ main{
 
 .navHipervinculo a{
     text-decoration: none;
-    color: black !important;
+    color: cornsilk !important;
+}
+
+.efectoBigger{
+    transition: 2s !important;
+}
+
+.efectoBigger:hover{
+    transform: scale(1.12,1.12) !important;
 }
 
 .idxproductos{
