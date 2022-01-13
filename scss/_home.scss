@@ -1,11 +1,14 @@
+@mixin estiloFlex($direccion){
+    display: flex;
+    flex-direction: $direccion;
+}
+
 .idxproductos{
     grid-area: idxproductos;
-    display: flex;
-    flex-direction: column;
+    @include estiloFlex(column);
     align-items: center;
     .idxproductos__slider .idxproductos__slider__imagenes{
-        display: flex;
-        flex-direction: column;
+        @include estiloFlex(column);
         flex-wrap: wrap;
         align-self: center;
         justify-content: center;
@@ -22,16 +25,14 @@
 
 .idxabout{
     grid-area: idxabout;
-    display: flex;
-    flex-direction: column;
+    @include estiloFlex(column);
     align-items: center;
     text-align: center;
 }
 
 .idxcontacto{
     grid-area: idxcontacto;
-    display: flex;
-    flex-direction: column;
+    @include estiloFlex(column);
     align-items: center;
     text-align: center;
 }

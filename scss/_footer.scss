@@ -15,9 +15,7 @@
         color: floralwhite;
         align-self: flex-end;
         a{
-            list-style-type: none;
-            text-decoration: none;
-            color: floralwhite;
+            @extend .footer__vinculos
         }
     }
 
