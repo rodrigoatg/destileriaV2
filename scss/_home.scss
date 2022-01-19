@@ -45,5 +45,14 @@
     a{
         text-decoration: none;
     }
+    button{
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+        //padding-top: 3% !important;
+        //padding-bottom: 3% !important;
+        border-radius: 3rem;
+        border: rgb(22, 72, 112) 1px solid;
+        white-space: nowrap;
+    }
 }
 

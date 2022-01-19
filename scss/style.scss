@@ -12,6 +12,10 @@
 
 /*Cosas Generales*/
 
+.test{
+    border: fuchsia 3px solid !important;
+}
+
 body{
     background-color: whitesmoke;
 }
@@ -70,11 +74,26 @@ main{
     transform: scale(1.12,1.12) !important;
 }
 
+.linkinterno{
+    text-decoration: none;
+    color: $fc_verde;
+    &:hover{
+        color: $fc_amarillo;    
+    }
+}
+
+
 
 
 /*pantalla grande*/
 
 @media only screen and (min-width: 750px){
+    /*HOME*/
+    .idxproductos__image{
+        width: 70rem !important;
+        align-self: center;
+        align-content: center;
+    }
     /*FOOTER*/
     .footer{
         margin: 0;
@@ -99,8 +118,8 @@ main{
         }
 
         .footer .footer__info{
-            font-style: italic;
-            color: darkred;
+            font-weight: normal;
+            color: $fc_amarillo;
             text-align: left;
         }
     }

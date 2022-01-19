@@ -21,8 +21,10 @@
 
     .footer__info{
         text-align: center;
+        font-weight: normal;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-style: italic;
-        color: darkred;
+        color: $fc_amarillo;
     }
 
 }
