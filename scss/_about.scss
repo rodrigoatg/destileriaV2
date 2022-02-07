@@ -1,0 +1,7 @@
+.textAbout{
+    word-spacing: 0.5rem !important;
+}
+.textAboutContacto{
+    @extend .textAbout;
+    text-align: center;    
+}

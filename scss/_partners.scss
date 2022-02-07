@@ -1,0 +1,82 @@
+/*PARTNERS*/
+.partnerBody{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+        "partnerNombre partnerNombre partnerNombre"    
+        "partnerImage partnerExtra partnerExtra"
+        "partnerImage partnerExtra partnerExtra"
+    ;   
+    display: flex;
+    flex-direction: column;
+    .partnerNombre{
+        grid-area: "partnerNombre";
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        color: $fc_azul; 
+        text-align: center;
+        color: $fc_verde ;
+        margin: 10px auto;
+        padding: 10px auto;
+    }
+    .partnerImage{
+        grid-area: "partnerImage";
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        img{
+            width: 300px;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+    .partnerExtra{
+        grid-area: "partnerExtra";
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    /*
+    .partnerIni{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px auto;
+        align-content: center;
+        .partnerNombre{
+            text-align: center;
+            color: $fc_verde ;
+            margin: 10px auto;
+            padding: 10px auto;
+        }
+        .partnerImage{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }      
+    .partnerExtra{
+        margin-top: 30px;
+        padding-left: 15px;
+        .partnerInfo{
+        color: $fc_azul-oscuro;
+        }
+        .PartnerRedes{
+        flex-direction: row;
+        }
+        .partnerMapa{
+        display: flex;
+        flex-direction: column;
+        iframe{
+            align-self: center;
+            width: 90%;
+            }
+        }*/
+}

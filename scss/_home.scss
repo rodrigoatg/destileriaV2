@@ -7,15 +7,20 @@
     grid-area: idxproductos;
     @include estiloFlex(column);
     align-items: center;
-    .idxproductos__slider .idxproductos__slider__imagenes{
+    .idxproductos__slider {
+        .idxproductos__slider__imagenes{
         @include estiloFlex(column);
         flex-wrap: wrap;
         align-self: center;
         justify-content: center;
         margin: 1rem auto;
+        }
     }
 }
 
+.idxproductos__image{
+    width: 1rem !important;
+}
 .idxpartners{
     grid-area: idxpartners;
     display: flex;

@@ -1,0 +1,94 @@
+/*pantalla grande*/
+
+@media only screen and (min-width: 750px){
+    /*HOME*/
+    .idxproductos__image{
+        width: 30rem !important;
+        align-self: center;
+        align-content: center;
+    }
+    
+    /*PARTNERS*/
+    .partnerBody{
+        padding-top: 2rem !important;
+        display: grid !important;
+        gap: 2rem;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+            "partnerNombre partnerNombre partnerNombre"    
+            "partnerImage partnerExtra partnerExtra"
+            "partnerImage partnerExtra partnerExtra"
+        ;   
+        display: flex;
+        flex-direction: column;
+        .partnerNombre{
+            grid-area: "partnerNombre";
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            color: $fc_azul !important;
+            text-align: center;
+            font-style: italic;
+            color: $fc_verde ;
+            margin: 10px auto;
+            padding: 10px auto;
+        }
+        .partnerImage{
+            grid-area: "partnerImage";
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            img{
+                width: 300px;
+                align-self: center;
+                justify-self: center;
+            }
+        }
+        .partnerExtra{
+            grid-area: "partnerExtra";
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;            
+        }
+    }
+    
+    .thumbPartner{
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    
+    /*FOOTER*/
+    .footer{
+        margin: 0;
+        padding: 0;
+        justify-self: self-end;
+        padding-left: 20px;
+        background-color: darkslategrey;
+        /*bottom: 0;*/
+        width: 100%;
+        
+        .footer__vinculos{
+            list-style-type: none;
+            text-decoration: none;
+            color: floralwhite;
+            align-self: flex-end;
+            text-align: left !important;
+            margin-left: 0.5rem !important;
+            a{
+                list-style-type: none;
+                text-decoration: none;
+                color: floralwhite;
+            }
+        }
+
+        .footer .footer__info{
+            font-weight: normal;
+            color: $fc_amarillo;
+            text-align: left;
+        }
+    }
+}

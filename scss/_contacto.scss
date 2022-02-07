@@ -1,0 +1,7 @@
+.btnSubmit{
+    border-radius: 7rem;
+    color: $fc_verde;
+    &:hover{
+        color: $fc_amarillo;    
+    }
+}
