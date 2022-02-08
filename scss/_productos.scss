@@ -1,6 +1,56 @@
 /*PRODCUTOS*/
-.productosCarrusel{
-    margin: 5rem;
-    padding: 3rem;
-    margin-bottom: 80px;
+.productosBody{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+        "productosNombre productosNombre productosNombre"    
+        "productosImage productosExtra productosExtra"
+        "productosImage productosExtra productosExtra"
+    ;   
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    .productosNombre{
+        grid-area: "productosNombre";
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        color: $fc_azul; 
+        text-align: center;
+        color: $fc_verde ;
+        margin: 10px auto;
+        padding: 10px auto;
+    }
+    .productosImage{
+        grid-area: "productosImage";
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        width: 250px;
+        align-self: center;
+        justify-self: center;
+    }
+    .productosExtra{
+        grid-area: "productosExtra";
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        padding: 1rem !important;
+        .productosInfo{
+            font-size: small;
+        }
+        .productosMapa{
+            iframe{
+            width: 325px;
+            height: 250px;
+            }
+        }
+    }
 }
+
+

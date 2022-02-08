@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../assets/testiconoweb.bmp"> <!--Esto es el incono del navegador-->
-    <meta name="keywords" content="destileria,gin,tonic,gintonic,sidra,sidras,cerveza,cervezas,destilado,destilar,alcohol,bar,bares,barril,emprendimiento,empresa,negocio,destilacion">
+    <meta name="keywords" content="destileria,gin,tonic,gintonic,sidra,sidras,cerveza,cervezas,destilado,destilar,alcohol,bar,bares,barril,emprendimiento,empresa,negocio,destilacion, bebidas, bebidas alcoholicas, alcohol">
     <meta name="description" content="Tienda on-line de la Destileria Bo.">
-    <title>Productos</title>
+    <meta name="author" content="Tarrio Gamboa Rodrigo Adrian" />
+    <meta name="copyright" content="Tarrio Gamboa Rodrigo Adrian|Destileria Bo" /> 
+    <title>Productos|Destilados Bo, Gin Tonic, Sidra y Cerveza</title>
 </head>
 <body>
   <div class="container-fluid m-0 p-0">
@@ -43,10 +45,10 @@
                     Productos
                 </a>
                 <ul class="dropdown-menu px-3 bgGreen" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item navHipervinculo" href="./productos.html">Gin & Tonic</a></li>
-                  <li><a class="dropdown-item navHipervinculo" href="./productos.html">Sidras</a></li>
+                  <li><a class="dropdown-item navHipervinculo" href="./productos.html#productos_GinTonic">Gin & Tonic</a></li>
+                  <li><a class="dropdown-item navHipervinculo" href="./productos.html#productos_Sidra">Sidras</a></li>
                   <!-- <li><hr class="dropdown-divider"></li> -->
-                  <li><a class="dropdown-item navHipervinculo" href="./productos.html">Cervezas</a></li>
+                  <li><a class="dropdown-item navHipervinculo" href="./productos.html#productos_Cerveza">Cervezas</a></li>
                 </ul>
                 <li class="nav-item navHipervinculo px-3">
                   <a class="nav-link " href="./about.html">Sobre Nosotros</a>
@@ -83,34 +85,95 @@
     </div>
     <hr>
     <br>
-    <div class="container d-flex flex-column mx-auto p-4">
-      <div id="carouselExampleIndicators" class="carousel slide align-self-center " data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active hoverBtn" aria-current="true" aria-label="Gin & Tonic"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Sidras"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Cervezas"></button>
+    <!--Cuerpo-->
+    <div class="row">
+      <main class="productosMain mx-auto">
+        <!--Prodcuto 1 => Gin & Tonic - INI-->
+        <div class="row">
+          <div class="productosBody">
+            <h2 class="productosNombre" id="productos_GinTonic">
+                Gin & Tonic 
+            </h2>
+            
+            <img class="productosImage" src="../assets/GinTonicLata.png" alt="GinBo" width="500px">
+            
+            <div class="productosExtra">
+                <article class="productosInfo">
+                    <p class="parrafo"> Nuestra bebida emblema, formulada cien por ciento por nosotros y comercializada en latas de 473cm<sup>3</sup> y en barriles de 50Lts. </p>
+                    <br><br>
+                    <p>Si estás interesado en adquirir nuestros productos no dudes en consultarnos.</p>    
+                    <br><br>
+                    <div class="idx__button justify-content-center d-flex">
+                      <button type="button" class="btn btn-outline-dark mb-4">
+                        <a class="linkinterno" href="./contacto.html">Averigua como comprar</a>
+                      </button>
+                    </div>
+                </article>
+            </div>
+          </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../assets/Gintonic.jpg" class="d-block w-75 mx-auto" alt="Gin & Tonic">
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/sidra4.webp" class="d-block w-50 mx-auto" alt="Sidras">
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/cerveza2.webp" class="d-block w-50 mx-auto" alt="Cervezas">
+        <!--Producto 1 => Gin Tonic - FIN-->
+        <div class="row p-3 mt-3">
+          <hr>
+        </div>
+        <!--Prodcuto 2 => Sidra - INI-->
+        <div class="row">
+          <div class="productosBody">
+            <h2 class="productosNombre" id="productos_Sidra">
+                Sidra 
+            </h2>
+            
+            <img class="productosImage" src="../assets/SidraLata.png" alt="SidraBo" width="500px">
+            
+            <div class="productosExtra">
+                <article class="productosInfo">
+                    <p class="parrafo"> Comercializamos nuestra Sidra Bó en latas de 473cm<sup>3</sup> y en barriles de 50Lts. </p>
+                    <br><br>
+                    <p>Si estás interesado en adquirir nuestros productos no dudes en consultarnos.</p>    
+                    <br><br>
+                    <div class="idx__button justify-content-center d-flex">
+                      <button type="button" class="btn btn-outline-dark mb-4">
+                        <a class="linkinterno" href="./contacto.html">Averigua como comprar</a>
+                      </button>
+                    </div>
+                </article>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev btn-outline-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next btn-outline-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-  </div>
+        <!--Producto 2 => Sidra - FIN-->
+        <div class="p-3 mt-3">
+          <hr>
+        </div>
+        <!--Prodcuto 3 => Cerveza - INI-->
+        <div class="row">
+          <div class="productosBody">
+            <h2 class="productosNombre" id="productos_Cerveza">
+                Cerveza 
+            </h2>
+            
+            <img class="productosImage" src="../assets/CervezaCuadrada.png" alt="Cerveza" width="500px">
+            
+            <div class="productosExtra">
+                <article class="productosInfo">
+                    <p class="parrafo"> Una cerveza oscura actualmente comercializada solo en barriles de 50Lts. </p>
+                    <br><br>
+                    <p>Si estás interesado en adquirir nuestros productos no dudes en consultarnos.</p>    
+                    <br><br>
+                    <div class="idx__button justify-content-center d-flex">
+                      <button type="button" class="btn btn-outline-dark mb-4">
+                        <a class="linkinterno" href="./contacto.html">Averigua como comprar</a>
+                      </button>
+                    </div>
+                </article>
+            </div>
+          </div>
+        </div>
+        <!--Producto 3 => Cerveza - FIN-->
+        <div>
+          <br><br><br>
+        </div>
+    </main>
+    </div>
   
   <br><br><br> 
   <footer>
@@ -121,16 +184,16 @@
               <br>
               <a href="./productos.html"> Productos</a>
               <br>
-              <a href="./partners.html"> Partners</a>
+              <a href="./productoss.html"> productoss</a>
               <br>
               <a href="./about.html">Sobre Nosotros</a>
               <br>
               <a href="./contacto.html"> Contacto</a>
+              <br><br>
+              <a class="footer__vinculos footerRedesImg" href="https://www.instagram.com/gintonic.bo/" target="_blank">
+                <img src="../assets/InstagramIconGrey.png" alt="InstagramBó" width="30px">
+              </a>
           </div>
-          <br>
-          <a class="footer__vinculos footerRedesImg" href="https://www.instagram.com/gintonic.bo/" target="_blank">
-            <img src="../assets/InstagramIconGrey.png" alt="InstagramBó" width="30px">
-          </a>
           <br>
           <div class="footer__info">
               <strong>Prohibida la venta a menores de 18 años.</strong> 

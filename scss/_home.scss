@@ -4,7 +4,6 @@
 }
 
 .idxproductos{
-    grid-area: idxproductos;
     @include estiloFlex(column);
     align-items: center;
     .idxproductos__slider {
@@ -19,24 +18,35 @@
 }
 
 .idxproductos__image{
-    width: 1rem !important;
+    width: 30rem !important;
+    align-self: center;
+    align-content: center;
 }
 .idxpartners{
-    grid-area: idxpartners;
     display: flex;
     flex-direction: column;
     align-items: center;
+    .idxpartners__images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        .thumbPartner{
+            padding: 1rem !important;
+            img{
+                align-self: center
+            }
+        }
+    }
 }
 
 .idxabout{
-    grid-area: idxabout;
     @include estiloFlex(column);
     align-items: center;
     text-align: center;
 }
 
 .idxcontacto{
-    grid-area: idxcontacto;
     @include estiloFlex(column);
     align-items: center;
     text-align: center;

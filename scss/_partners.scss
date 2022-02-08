@@ -11,6 +11,7 @@
     ;   
     display: flex;
     flex-direction: column;
+    margin: 3rem;
     .partnerNombre{
         grid-area: "partnerNombre";
         grid-column-start: 1;
@@ -29,11 +30,9 @@
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 4;
-        img{
-            width: 300px;
-            align-self: center;
-            justify-self: center;
-        }
+        width: 250px;
+        align-self: center;
+        justify-self: center;
     }
     .partnerExtra{
         grid-area: "partnerExtra";
@@ -41,42 +40,15 @@
         grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 4;
-    }
-
-    /*
-    .partnerIni{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5px auto;
-        align-content: center;
-        .partnerNombre{
-            text-align: center;
-            color: $fc_verde ;
-            margin: 10px auto;
-            padding: 10px auto;
-        }
-        .partnerImage{
-            display: flex;
-            flex-direction: column;
-        }
-        
-    }      
-    .partnerExtra{
-        margin-top: 30px;
-        padding-left: 15px;
+        padding: 1rem !important;
         .partnerInfo{
-        color: $fc_azul-oscuro;
-        }
-        .PartnerRedes{
-        flex-direction: row;
+            font-size: small;
         }
         .partnerMapa{
-        display: flex;
-        flex-direction: column;
-        iframe{
-            align-self: center;
-            width: 90%;
+            iframe{
+            width: 325px;
+            height: 250px;
             }
-        }*/
+        }
+    }
 }

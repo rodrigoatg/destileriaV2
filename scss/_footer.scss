@@ -17,6 +17,10 @@
         a{
             @extend .footer__vinculos
         }
+        .footerRedesImg{
+            filter: brightness(0.9);
+            mix-blend-mode: multiply;
+        }
     }
 
     .footer__info{
@@ -29,7 +33,3 @@
 
 }
 
-.footerRedesImg{
-    filter: brightness(0.9);
-    mix-blend-mode: multiply;
-}
